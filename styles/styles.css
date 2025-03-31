@@ -105,9 +105,17 @@ body {
    transform: translateX(-50%);
 }
 
+.btn {
+   opacity: 20%;
+}
+
 .btn img{
    max-width: 50px;
 } 
+
+.btn-on {
+   opacity: 100%;
+}
 
 .section-off {
    display: none;
