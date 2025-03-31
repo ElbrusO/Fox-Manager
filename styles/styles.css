@@ -1,0 +1,114 @@
+@font-face {
+   font-family: 'Lilita';
+   src: url('../fonts/Lilita.ttf');
+}
+
+@font-face {
+   font-family: 'Menlo-reg';
+   src: url('../fonts/Menlo-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Menlo-bold';
+   src: url('../fonts/Menlo-Bold.ttf');
+}
+
+@font-face {
+   font-family: 'Schoolbell';
+   src: url('../fonts/Schoolbell-Regular.ttf');
+}
+
+body {
+   height: 100vh;
+   background-color: #f4f4f4;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 800px;
+   margin: 5vh auto 0;
+   font-size: 38px;
+}
+
+.menu{
+   font-family: 'Menlo-reg';
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* ------------------------------ */
+
+.tasks-clear-btn {
+   font-family: 'Schoolbell';
+   position: fixed;
+   top: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+
+   opacity: 0.2;
+}
+
+.checklist {
+   margin-top: 100px;
+   text-align: left;
+}
+
+.task-li{
+   padding: 12px 0;
+}
+
+.task-li-complt {
+   opacity: 0.3;
+   text-decoration: line-through;
+   text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------- */
+
+.add-menu input {
+   background-image: linear-gradient(#ffffff,#f4f4f4);
+   padding: 20px;
+   border-radius: 20px;
+   color: #000000;
+   max-width: 380px;
+}
+
+.add-menu button{
+   display: block;
+   width: 100%;
+   margin: 80px 0 0;
+   background-color: gray;
+   color: #ffffff;
+   padding: 10px;
+   border-radius: 16px;
+   opacity: 0.4;
+}
+
+.add-menu button:active{
+   box-shadow: inset 1px 1px 2px 2px #000;
+}
+
+/* ---------------------------- */
+
+.main-btns {
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+
+   position: fixed;
+   top: 90%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.btn img{
+   max-width: 50px;
+} 
+
+.section-off {
+   display: none;
+}
